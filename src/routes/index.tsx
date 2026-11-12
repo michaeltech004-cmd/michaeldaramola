@@ -86,7 +86,7 @@ function Hero() {
             </p>
           </Reveal>
           <Reveal delay={80}>
-            <h1 className="mt-8 text-5xl font-semibold leading-[0.98] sm:text-6xl lg:text-7xl xl:text-[5.4rem]">
+            <h1 className="mt-8 text-balance text-5xl font-semibold leading-[0.98] sm:text-6xl lg:text-[4.4rem] xl:text-[5rem]">
               Building <span className="text-gradient">High-Converting</span> Shopify Stores That Grow Businesses.
             </h1>
           </Reveal>
