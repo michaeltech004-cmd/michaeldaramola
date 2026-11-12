@@ -15,4 +15,20 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  vite: {
+    // Pre-bundle client deps at startup so a mid-session re-optimization can't load
+    // a second React copy into an open tab ("Cannot read properties of null (reading 'useCallback')").
+    optimizeDeps: {
+      include: [
+        "@radix-ui/react-slot",
+        "class-variance-authority",
+        "clsx",
+        "tailwind-merge",
+        "lucide-react",
+        "sonner",
+        "zod",
+        "@supabase/supabase-js",
+      ],
+    },
+  },
 });
