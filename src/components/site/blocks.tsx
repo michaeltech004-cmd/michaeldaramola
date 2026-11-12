@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, Quote } from "lucide-react";
+import type { ReactNode } from "react";
 import { Button } from "@/components/ui/button";
 import { contact, process, reasons, type Project, type Service } from "@/lib/site-data";
 import { BrowserFrame } from "./frames";
@@ -151,7 +152,7 @@ export function CtaBand() {
   );
 }
 
-export function PageHero({ eyebrow, title, intro }: { eyebrow: string; title: React.ReactNode; intro: string }) {
+export function PageHero({ eyebrow, title, intro }: { eyebrow: string; title: ReactNode; intro: string }) {
   return (
     <section className="relative overflow-hidden pb-16 pt-36 sm:pb-24 sm:pt-44">
       <div className="absolute inset-0 bg-hero" aria-hidden="true" />
