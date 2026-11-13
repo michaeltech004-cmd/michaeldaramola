@@ -32,5 +32,5 @@ use the editor.
 ## Project rules
 - Site content (contact links, projects, services, packages, skills) lives in `src/lib/site-data.ts`; pages read from it so edits happen in one place.
 - Contact form submissions are validated by `src/lib/contact-schema.ts` (shared client/server) and inserted by a public server function using the publishable key with an anon insert-only RLS policy — no admin client needed.
-- Project screenshots are captured from the live stores and stored as CDN asset pointers in `src/assets/*.asset.json`.
+- All site images are real files in the repo (`src/assets/*.webp` imported as modules, favicons in `public/`), never `.asset.json` CDN pointers — the site is also deployed outside Lovable (Vercel), where `/__l5e/` URLs do not exist.
 - Client deps used site-wide are listed in `optimizeDeps.include` in `vite.config.ts` so a dev re-optimization can't load a duplicate React copy into an open preview; add new UI deps there.

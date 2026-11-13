@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Check } from "lucide-react";
-import portrait from "@/assets/michael_portrait.webp.asset.json";
-import logo from "@/assets/md_logo.webp.asset.json";
+import portrait from "@/assets/michael_portrait.webp";
+import logo from "@/assets/md_logo.webp";
 import { Button } from "@/components/ui/button";
 import { CtaBand, PageHero, WhySection } from "@/components/site/blocks";
 import { Reveal } from "@/components/site/reveal";
@@ -40,10 +40,10 @@ function About() {
         <div className="mx-auto grid max-w-7xl gap-14 px-5 sm:px-8 lg:grid-cols-[0.9fr_1.1fr]">
           <Reveal className="relative">
             <div className="overflow-hidden rounded-[2rem] border border-border">
-              <img src={portrait.url} alt="Michael Daramola" width={896} height={1117} className="aspect-[4/5] w-full object-cover object-top" />
+              <img src={portrait} alt="Michael Daramola" width={896} height={1117} className="aspect-[4/5] w-full object-cover object-top" />
             </div>
             <div className="mt-5 flex items-center gap-4 rounded-2xl border border-border bg-card p-4">
-              <img src={logo.url} alt="Michael Daramola logo" width={64} height={64} className="size-16 rounded-xl" loading="lazy" />
+              <img src={logo} alt="Michael Daramola logo" width={64} height={64} className="size-16 rounded-xl" loading="lazy" />
               <div>
                 <p className="font-display text-lg font-semibold">{contact.role}</p>
                 <p className="eyebrow mt-1 text-glow">{contact.tagline}</p>

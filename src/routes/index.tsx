@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Check, ShoppingBag, Sparkles, TrendingUp } from "lucide-react";
-import portrait from "@/assets/michael_portrait.webp.asset.json";
-import logo from "@/assets/md_logo.webp.asset.json";
+import portrait from "@/assets/michael_portrait.webp";
+import logo from "@/assets/md_logo.webp";
 import { Button } from "@/components/ui/button";
 import { CtaBand, ProcessSection, ProjectCard, ServiceCard, TestimonialsSection, WhySection } from "@/components/site/blocks";
 import { Reveal } from "@/components/site/reveal";
@@ -113,10 +113,10 @@ function Hero() {
         <Reveal delay={200} className="relative mx-auto w-full max-w-md lg:max-w-none">
           <div className="absolute -inset-3 rounded-[2.5rem] bg-brand opacity-40 blur-2xl" aria-hidden="true" />
           <div className="relative overflow-hidden rounded-[2rem] border border-border bg-card">
-            <img src={portrait.url} alt="Michael Daramola, Shopify Expert and E-commerce Developer" width={896} height={1117} className="aspect-[4/5] w-full object-cover object-top" fetchPriority="high" />
+            <img src={portrait} alt="Michael Daramola, Shopify Expert and E-commerce Developer" width={896} height={1117} className="aspect-[4/5] w-full object-cover object-top" fetchPriority="high" />
             <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-night/90 to-transparent" aria-hidden="true" />
             <div className="absolute inset-x-5 bottom-5 flex items-center gap-3 rounded-2xl glass p-3">
-              <img src={logo.url} alt="" width={48} height={48} className="size-12 shrink-0 rounded-xl" />
+              <img src={logo} alt="" width={48} height={48} className="size-12 shrink-0 rounded-xl" />
               <div className="min-w-0">
                 <p className="truncate font-display font-semibold">Michael Daramola</p>
                 <p className="truncate text-sm text-muted-foreground">Shopify Expert & E-commerce Developer</p>
@@ -143,10 +143,10 @@ function AboutTeaser() {
       <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 sm:px-8 lg:grid-cols-2">
         <Reveal className="relative">
           <div className="overflow-hidden rounded-[2rem] border border-border">
-            <img src={portrait.url} alt="Portrait of Michael Daramola" width={896} height={1117} loading="lazy" className="aspect-[5/4] w-full object-cover object-[50%_20%]" />
+            <img src={portrait} alt="Portrait of Michael Daramola" width={896} height={1117} loading="lazy" className="aspect-[5/4] w-full object-cover object-[50%_20%]" />
           </div>
           <div className="absolute -bottom-8 right-6 hidden size-36 overflow-hidden rounded-3xl border border-border shadow-card sm:block">
-            <img src={logo.url} alt="Michael Daramola brand logo" width={144} height={144} loading="lazy" className="size-full object-cover" />
+            <img src={logo} alt="Michael Daramola brand logo" width={144} height={144} loading="lazy" className="size-full object-cover" />
           </div>
         </Reveal>
         <div>
