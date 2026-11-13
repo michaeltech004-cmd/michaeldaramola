@@ -1,1 +1,1 @@
-- [ ] Put every image file into the project so images work on Vercel (no Lovable-only URLs)
+- [x] Put every image file into the project so images work on Vercel (no Lovable-only URLs)
