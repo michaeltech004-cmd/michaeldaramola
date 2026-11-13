@@ -1,19 +1,19 @@
-import buildout1 from "@/assets/buildout_desktop1.webp.asset.json";
-import buildout2 from "@/assets/buildout_desktop2.webp.asset.json";
-import buildout3 from "@/assets/buildout_desktop3.webp.asset.json";
-import buildoutM from "@/assets/buildout_mobile.webp.asset.json";
-import vertex1 from "@/assets/vertex_desktop1.webp.asset.json";
-import vertex2 from "@/assets/vertex_desktop2.webp.asset.json";
-import vertex3 from "@/assets/vertex_desktop3.webp.asset.json";
-import vertexM from "@/assets/vertex_mobile.webp.asset.json";
-import ortrends1 from "@/assets/ortrends_desktop1.webp.asset.json";
-import ortrends2 from "@/assets/ortrends_desktop2.webp.asset.json";
-import ortrends3 from "@/assets/ortrends_desktop3.webp.asset.json";
-import ortrendsM from "@/assets/ortrends_mobile.webp.asset.json";
-import qoffah1 from "@/assets/qoffah_desktop1.webp.asset.json";
-import qoffah2 from "@/assets/qoffah_desktop2.webp.asset.json";
-import qoffah3 from "@/assets/qoffah_desktop3.webp.asset.json";
-import qoffahM from "@/assets/qoffah_mobile.webp.asset.json";
+import buildout1 from "@/assets/buildout_desktop1.webp";
+import buildout2 from "@/assets/buildout_desktop2.webp";
+import buildout3 from "@/assets/buildout_desktop3.webp";
+import buildoutM from "@/assets/buildout_mobile.webp";
+import vertex1 from "@/assets/vertex_desktop1.webp";
+import vertex2 from "@/assets/vertex_desktop2.webp";
+import vertex3 from "@/assets/vertex_desktop3.webp";
+import vertexM from "@/assets/vertex_mobile.webp";
+import ortrends1 from "@/assets/ortrends_desktop1.webp";
+import ortrends2 from "@/assets/ortrends_desktop2.webp";
+import ortrends3 from "@/assets/ortrends_desktop3.webp";
+import ortrendsM from "@/assets/ortrends_mobile.webp";
+import qoffah1 from "@/assets/qoffah_desktop1.webp";
+import qoffah2 from "@/assets/qoffah_desktop2.webp";
+import qoffah3 from "@/assets/qoffah_desktop3.webp";
+import qoffahM from "@/assets/qoffah_mobile.webp";
 
 export const contact = {
   name: "Michael Daramola",
@@ -56,8 +56,8 @@ export const projects: Project[] = [
       "Bold adventure-style hero with a clear call to action",
       "Trust row and best-seller collections on the homepage",
     ],
-    desktop: [buildout1.url, buildout2.url, buildout3.url],
-    mobile: buildoutM.url,
+    desktop: [buildout1, buildout2, buildout3],
+    mobile: buildoutM,
   },
   {
     slug: "vertex-apparel",
@@ -74,8 +74,8 @@ export const projects: Project[] = [
       "Collection cards for Graphic Tees and Caps & Accessories",
       "Simple, focused navigation: Home, T-Shirts, Caps, Contact",
     ],
-    desktop: [vertex1.url, vertex2.url, vertex3.url],
-    mobile: vertexM.url,
+    desktop: [vertex1, vertex2, vertex3],
+    mobile: vertexM,
   },
   {
     slug: "ortrends",
@@ -92,8 +92,8 @@ export const projects: Project[] = [
       "Visual shop-by-style navigation",
       "Product grid with colour swatches and quick add",
     ],
-    desktop: [ortrends1.url, ortrends2.url, ortrends3.url],
-    mobile: ortrendsM.url,
+    desktop: [ortrends1, ortrends2, ortrends3],
+    mobile: ortrendsM,
   },
   {
     slug: "qoffah",
@@ -110,8 +110,8 @@ export const projects: Project[] = [
       "Best-seller and collection rows with ratings",
       "Brand story section rooted in heritage",
     ],
-    desktop: [qoffah1.url, qoffah2.url, qoffah3.url],
-    mobile: qoffahM.url,
+    desktop: [qoffah1, qoffah2, qoffah3],
+    mobile: qoffahM,
   },
 ];
 

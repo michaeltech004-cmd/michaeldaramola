@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Mail, MessageCircle } from "lucide-react";
-import logo from "@/assets/md_logo.webp.asset.json";
+import logo from "@/assets/md_logo.webp";
 import { contact } from "@/lib/site-data";
 
 export function SiteFooter() {
@@ -9,7 +9,7 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:px-8 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
           <div className="flex items-center gap-3">
-            <img src={logo.url} alt="Michael Daramola logo" width={56} height={56} className="size-14 rounded-2xl ring-1 ring-border" loading="lazy" />
+            <img src={logo} alt="Michael Daramola logo" width={56} height={56} className="size-14 rounded-2xl ring-1 ring-border" loading="lazy" />
             <div>
               <p className="font-display text-xl font-semibold">Michael Daramola</p>
               <p className="eyebrow text-glow">{contact.tagline}</p>

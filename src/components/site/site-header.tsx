@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import logo from "@/assets/md_logo.webp.asset.json";
+import logo from "@/assets/md_logo.webp";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -31,7 +31,7 @@ export function SiteHeader() {
     <header className={cn("fixed inset-x-0 top-0 z-50 transition-all duration-300", scrolled || open ? "border-b border-border bg-background/80 backdrop-blur-xl" : "bg-transparent")}>
       <div className="mx-auto grid h-18 max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 sm:px-8 lg:grid-cols-[1fr_auto_1fr]">
         <Link to="/" className="flex min-w-0 items-center gap-3" onClick={() => setOpen(false)}>
-          <img src={logo.url} alt="" width={40} height={40} className="size-10 shrink-0 rounded-xl ring-1 ring-border" />
+          <img src={logo} alt="" width={40} height={40} className="size-10 shrink-0 rounded-xl ring-1 ring-border" />
           <span className="min-w-0">
             <span className="block truncate font-display text-base font-semibold leading-tight">Michael Daramola</span>
             <span className="block truncate font-mono text-[0.62rem] uppercase tracking-[0.2em] text-muted-foreground">Shopify Expert</span>
